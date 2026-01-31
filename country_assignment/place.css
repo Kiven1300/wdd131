@@ -114,8 +114,6 @@ dd { margin: 0; }
   display: inline-block;
   margin: .25rem 0 .75rem 0;
 }
-
-/* Footer */
 .site-footer {
   background: var(--primary);
   color: white;
@@ -124,7 +122,6 @@ dd { margin: 0; }
   margin-top: 1rem;
 }
 
-/* WIDE VIEW (matches second wireframe) */
 @media (min-width: 900px) {
   main {
     background-image: url('images/hero-large.webp');
@@ -155,12 +152,10 @@ dd { margin: 0; }
     right: 20px;
   }
 
-  /* Hide SVG icon in wide view */
   .weather-icon {
     display: none;
   }
 
-  /* Pseudo-element emoticon AFTER the Weather heading */
   .weather-title::after {
     content: " ⛅";
     font-weight: 400;
