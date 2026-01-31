@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Place</title>
+  <meta name="description" content="A place page with data and weather." />
+  <link rel="stylesheet" href="place.css" />
+  <script src="place.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Mexico</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source
+          media="(min-width: 900px)"
+          srcset="images/hero-large.webp"
+        />
+        <img
+          src="images/hero-small.webp"
+          alt="Scenic view of the place"
+          width="1200"
+          height="700"
+          loading="lazy"
+        />
+      </picture>
+    </section>
+
+    <!-- DATA card -->
+    <section class="card data" aria-label="Place data">
+      <h2>Data</h2>
+      <dl>
+        <div class="row"><dt>Country:</dt><dd>Mexico</dd></div>
+        <div class="row"><dt>Region:</dt><dd>Yucatán</dd></div>
+        <div class="row"><dt>Language:</dt><dd>Spanish</dd></div>
+        <div class="row"><dt>Currency:</dt><dd>MXN</dd></div>
+        <div class="row"><dt>Population:</dt><dd>—</dd></div>
+      </dl>
+    </section>
+
+    <!-- WEATHER card -->
+    <section class="card weather" aria-label="Weather section">
+      <h2 class="weather-title">Weather</h2>
+
+      <dl>
+        <div class="row"><dt>Temp:</dt><dd><span id="temp">10</span>°C</dd></div>
+        <div class="row"><dt>Wind:</dt><dd><span id="wind">10</span> km/h</dd></div>
+        <div class="row"><dt>Condition:</dt><dd>Partly Cloudy</dd></div>
+        <div class="row"><dt>Wind Chill:</dt><dd><span id="windchill">N/A</span></dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      © <span id="year"></span> • Kevin Gonzalez Alvarez • Mexico Assignment
+    </p>
+    <p>
+      Last modified: <span id="lastModified"></span>
+    </p>
+  </footer>
+</body>
+</html>
