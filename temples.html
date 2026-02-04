@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - Kevin Gonzalez Alvarez</title>
+    <meta name="description" content="A responsive temple album page showcasing beautiful temple pictures">
+    <meta name="author" content="Kevin Gonzalez Alvarez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#old">Old</a></li>
+                <li><a href="#new">New</a></li>
+                <li><a href="#large">Large</a></li>
+                <li><a href="#small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        
+        <div class="gallery">
+            <figure>
+                <img src="tem_img/templo1.webp" alt="Mexico City Temple" loading="lazy">
+                <figcaption>Mexico City Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="tem_img/templo2.webp" alt="Tijuana Temple" loading="lazy">
+                <figcaption>Tijuana Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="tem_img/templo3.webp" alt="Gila Valley, Arizona Temple" loading="lazy">
+                <figcaption>Gila Valley, Arizona Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="tem_img/templo4.webp" alt="Aba, Nigeria Temple" loading="lazy">
+                <figcaption>Aba, Nigeria Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="tem_img/temple5.webp" alt="Cardston, Alberta Temple" loading="lazy">
+                <figcaption>Cardston, Alberta Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="tem_img/temple6.webp" alt="Panama City Temple" loading="lazy">
+                <figcaption>Panama City Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="tem_img/temple7.webp" alt="Cordoba, Argentina Temple" loading="lazy">
+                <figcaption>Cordoba, Argentina Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="tem_img/temple8.webp" alt="Denver, Colorado Temple" loading="lazy">
+                <figcaption>Denver, Colorado Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="tem_img/temple9.webp" alt="Hong Kong, China Temple" loading="lazy">
+                <figcaption>Hong Kong, China Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <span id="current_year"></span>&copy; Kevin Gonzalez Alvarez
+        </p>
+        <p class="highlight" id="LastModified"></p>
+    </footer>
+</body>
+</html>
