@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the authentic flavors of Mexico: tacos, tamales, mole and more. Explore the rich Mexican culinary tradition.">
+  <title>Flavors of Mexico | Mexican Culinary Tradition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <span class="logo-icon">🌮</span>
+        <span class="logo-text">Flavors of Mexico</span>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="dishes.html">Dishes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-banner">
+      <div class="hero-content">
+        <h1>Discover the Authentic Flavors of Mexico</h1>
+        <p>Explore the rich Mexican culinary tradition through its most emblematic dishes</p>
+        <a href="dishes.html" class="cta-button">View Dishes</a>
+      </div>
+    </section>
+
+    <section class="featured-dishes">
+      <h2>Featured Dishes</h2>
+      <div class="dishes-grid" id="featured-dishes-container">
+        <!-- Dishes will be loaded dynamically via JavaScript -->
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-content">
+        <h2>Our Mission</h2>
+        <p>To preserve and share the authentic Mexican culinary tradition. Each dish tells a story of centuries of culture, tradition, and flavor passed down from generation to generation.</p>
+        <p>From ancient pre-Hispanic flavors to colonial influences, Mexican cuisine is an intangible cultural heritage of humanity recognized by UNESCO.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <h3 id="dishes-count">0</h3>
+          <p>Traditional Dishes</p>
+        </div>
+        <div class="stat-card">
+          <h3 id="visitors-count">0</h3>
+          <p>Visitors</p>
+        </div>
+        <div class="stat-card">
+          <h3>500+</h3>
+          <p>Years of Tradition</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="newsletter-content">
+        <h2>Stay Informed</h2>
+        <p>Receive traditional recipes and cultural facts directly in your inbox</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" id="newsletter-email" placeholder="your@email.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="newsletter-message" class="form-message"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Flavors of Mexico</h3>
+        <p>Preserving Mexican culinary tradition since 2026</p>
+      </div>
+      <div class="footer-section">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dishes.html">Dishes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Flavors of Mexico. All rights reserved.</p>
+      <p>Last modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

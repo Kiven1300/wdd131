@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact us for reservations, special events or more information about traditional Mexican cuisine.">
+  <title>Contact | Flavors of Mexico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <span class="logo-icon">🌮</span>
+        <span class="logo-text">Flavors of Mexico</span>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dishes.html">Dishes</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Contact Us</h1>
+      <p>Have questions or comments? We'd love to hear from you</p>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <div class="info-item">
+            <h3>📍 Address</h3>
+            <p>Av. Revolución 1234<br>Mexico City, CDMX 01000<br>Mexico</p>
+          </div>
+          <div class="info-item">
+            <h3>📞 Phone</h3>
+            <p>+52 55 1234 5678</p>
+          </div>
+          <div class="info-item">
+            <h3>✉️ Email</h3>
+            <p>contact@flavorsofmexico.org</p>
+          </div>
+          <div class="info-item">
+            <h3>🕒 Hours</h3>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <h2>Send Us a Message</h2>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="fullname">Full Name *</label>
+              <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="100">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digits without spaces">
+              <small>Optional: 10 digits without spaces or dashes</small>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="">-- Select a subject --</option>
+                <option value="reservacion">Reservation</option>
+                <option value="evento">Special Event</option>
+                <option value="catering">Catering</option>
+                <option value="informacion">More Information</option>
+                <option value="otro">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="people">Number of People</label>
+              <input type="number" id="people" name="people" min="1" max="100">
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" required minlength="10" maxlength="500"></textarea>
+              <small>Minimum 10 characters, maximum 500</small>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <span>I wish to receive news and promotions</span>
+              </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+          <div id="form-message" class="form-message"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="submissions-section">
+      <h2>Recent Messages</h2>
+      <div id="submissions-container" class="submissions-container">
+        <p class="empty-message">No recent messages</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Flavors of Mexico</h3>
+        <p>Preserving Mexican culinary tradition since 2026</p>
+      </div>
+      <div class="footer-section">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dishes.html">Dishes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Flavors of Mexico. All rights reserved.</p>
+      <p>Last modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/contact.js"></script>
+</body>
+</html>
